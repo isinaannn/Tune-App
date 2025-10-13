@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.trendinglist-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 8px 0;
+
+}
+
+.song-card {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(24, 22, 22);
+    border-radius: 15px / 18px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.song-image {
+    width: 100px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+
+}
+
+.song-details {
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: rgb(24, 22, 22);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding-left: 10px;
+
+
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 23px;
+    text-align: start;
+    font-weight: 100;
+
+}
+
+h3 {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.add-button {
+    display: flex;
+    align-items: end;
+
+}
+
+.add-img {
+    width: 25px;
+    height: 25px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+}
