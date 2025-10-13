@@ -5,6 +5,7 @@ import './App.css'
 import TrendingList from './TrendningList'
 import RecommendationList from './RecommendationList'
 import YearSongs from './YearSongs'
+import NewArrival from './assets/NewArrival'
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
      <RecommendationList />
     </div>
      </div> */}
-
+{/* 
         <div className='2025-songs'>
           <h3 style={{textAlign: "start"}}>2025 year</h3>
 
@@ -43,6 +44,21 @@ function App() {
             </div>
           </div>
 
+        </div> */}
+
+
+        <div className='arrival-songs-container'>
+          <h3 style={{textAlign: "start"}}>New arrival songs</h3>
+
+          <div className='new-arrival-slider-container' style={{marginTop: "20px",overflow: "hidden",width: "100%",overflowX: "scroll",overflowY: "hidden",scrollBehavior: "smooth",scrollbarWidth: "none"}}>
+            <div className='new-arrival-songs-card-wrapper' style={{display: "flex",gap: "30px"}}>
+              <NewArrival />
+              <NewArrival />
+              <NewArrival />
+              <NewArrival />
+            </div>
+          </div>
+          
         </div>
 
     </div>
