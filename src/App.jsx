@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import TrendingList from './TrendningList'
 import RecommendationList from './RecommendationList'
-
+import YearSongs from './YearSongs'
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
 
-      <h2 style={{ textAlign: "start", fontSize: "30px", marginBottom: "20px" }}>Trending songs</h2>
+      {/* <h2 style={{ textAlign: "start", fontSize: "30px", marginBottom: "20px" }}>Trending songs</h2>
       <TrendingList />
 
       <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "8px", paddingRight: "5px" }}>
@@ -27,9 +27,24 @@ function App() {
      <RecommendationList />
      <RecommendationList />
      <RecommendationList />
-   
-     </div>
-     </div>
+    </div>
+     </div> */}
+
+        <div className='2025-songs'>
+          <h3 style={{textAlign: "start"}}>2025 year</h3>
+
+          <div className='songs-slider-container' style={{marginTop: "20px",overflow: 'hidden',width:"100%",overflowX: "scroll",overflowY: "hidden",scrollBehavior: "smooth",scrollbarWidth: "none"}}>
+            <div className='songs-card-wrapper' style={{display: "flex",gap: "30px"}}>
+              <YearSongs />
+              <YearSongs />
+              <YearSongs />
+              <YearSongs />
+      
+            </div>
+          </div>
+
+        </div>
+
     </div>
   )
 }
