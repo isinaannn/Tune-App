@@ -7,7 +7,7 @@ export default function NewArrival() {
         <>
             <div className="new-arrival-container">
                 <div className="new-arrival-card">
-                <img src="public/saiyyaara-thumbnail.jpeg" alt="no image" />
+                <img src="src/Components/Home/NewArrival/saiyyaara-thumbnail.jpeg" alt="no image" />
                 </div>
                 <div className="new-arrival-details">
                     <p>Saiyaara Title Song | Ahaan Panday, Aneet Padda | Tanishk Bagchi</p>

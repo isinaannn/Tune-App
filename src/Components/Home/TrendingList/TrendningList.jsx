@@ -9,7 +9,7 @@ export default function TrendingList() {
                 <div className="song-card">
 
                     <div className='song-image'>
-                        <img src="public/just take a breath.jpeg" alt="" />
+                        <img src="src/Components/Home/TrendingList/just take a breath.jpeg" alt="" />
                     </div>
 
                     <div className='song-details'>
@@ -19,7 +19,7 @@ export default function TrendingList() {
 
                     <div className='add-button'>
 
-                        <img src="src/assets/icons8-add-100 (1).png" alt="" className='add-img' />
+                        <img src="src/Components/Home/TrendingList/icons8-add-100 (1).png" alt="" className='add-img' />
                     </div>
                 </div>
             </div>
