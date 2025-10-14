@@ -7,22 +7,33 @@ import RecommendationList from './Components/Home/Recommendation/RecommendationL
 import YearSongs from './Components/Home/YearList/YearSongs'
 import NewArrival from './Components/Home/NewArrival/NewArrival'
 import RecentList from './Components/Home/RecentList/RecentList'
+import Header from './Components/Home/Header/Header'
 
 function App() {
 
 
   return (
-    <div style={{ width: "100%" }}>
+    <div style={{ width: "100%",display: "flex",flexDirection: "column",gap: "15px" }}>
 
-      {/* <h2 style={{ textAlign: "start", fontSize: "30px", marginBottom: "20px" }}>Trending songs</h2>
+      <div className='header' style={{position: "sticky",top: "32px"}}>
+      <Header />
+
+      </div>
+
+      <div className='Trending'>
+      <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" }}>Trending songs</h3>
+      <TrendingList />
+      <TrendingList />
+      <TrendingList />
       <TrendingList />
 
       <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "8px", paddingRight: "5px" }}>
         <a href="" style={{ color: "white", fontWeight: "300" }}>View all</a>
       </div>
+      </div>
 
-
-      <h2 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" }}>Recommended to you</h2>
+      <div className='Recommendation'>
+      <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" }}>Recommended to you</h3>
       <div className='recommendation-card-slider-container' style={{ overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none", }}>
         <div className='recommendation-card-wrapper' style={{ display: "flex", gap: "30px", paddingRight: "30px" }}>
 
@@ -32,10 +43,25 @@ function App() {
           <RecommendationList />
         </div>
       </div>
+      </div>
+
+
+      <div className='Recents'>
+        <h3 style={{textAlign:"start",fontSize: "25px"}}>Recents</h3>
+
+        <div className='recent-slider-container' style={{marginTop: "20px",overflow: "hidden",width: "100%",overflowX: "scroll",overflowY: "hidden",overscrollBehavior: "smooth",scrollbarWidth: "none"}}>
+          <div className='recent-card-slider' style={{display: "flex",gap: "30px"}}>
+            <RecentList />
+            <RecentList />
+            <RecentList />
+            <RecentList />
+          </div>
+        </div>
+      </div>
 
 
       <div className='2025-songs'>
-        <h3 style={{ textAlign: "start" }}>2025 year</h3>
+        <h3 style={{ textAlign: "start" }}>2025 songs</h3>
 
         <div className='songs-slider-container' style={{ marginTop: "20px", overflow: 'hidden', width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none" }}>
           <div className='songs-card-wrapper' style={{ display: "flex", gap: "30px" }}>
@@ -62,22 +88,11 @@ function App() {
             <NewArrival />
           </div>
         </div>
-      </div> */}
-
-      <div className='Recents'>
-        <h3 style={{textAlign:"start",fontSize: "25px"}}>Recents</h3>
-
-        <div className='recent-slider-container' style={{marginTop: "20px",overflow: "hidden",width: "100%",overflowX: "scroll",overflowY: "hidden",overscrollBehavior: "smooth",scrollbarWidth: "none"}}>
-          <div className='recent-card-slider' style={{display: "flex",gap: "30px"}}>
-            <RecentList />
-            <RecentList />
-            <RecentList />
-            <RecentList />
-          </div>
-        </div>
-
       </div>
 
+
+
+      
     </div>
   )
 }

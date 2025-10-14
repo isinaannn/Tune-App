@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  
+}
+
+.song{
+    color: goldenrod;
+}
+.ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
+.icon{
+    position: absolute;
+    right: 5px;
+}
+.header-icon{
+    height: 30px;
+    width: 30px;
+}
