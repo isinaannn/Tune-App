@@ -1,33 +1,53 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import './Slider.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+ const Root = useRef();
+
+ useEffect(()=>{
+
+  setTimeout(()=>{
+      const observer = new IntersectionObserver((entries,observer)=>{
+        entries.forEach(entry=>{
+                if(entry.intersectionRatio==1.0){
+                const page = document.querySelector(`.page${entry.target.classList[1]}`);
+                console.log(`page${entry.target.classList[1]}`)
+                document.querySelector(".active")?.classList.remove("active");
+                page.classList.add("active");
+
+                }
+        });
+      },{
+        root:Root.current,
+        threshold:1.0,
+      });
+      const target = Root.current.querySelectorAll("div");
+   target.forEach(t=>{
+    observer.observe(t);
+   })
+  },500);
+ },[])
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+     <div className="slider"  ref={Root}>
+      <div className="slide hot" >slide 1</div>
+      <div className="slide sex">slide 2</div>
+      <div className="slide big">slide 3</div>
+      <div className="slide tit">slide 3</div>
+      <div className="slide thickcock">slide 3</div>
+     </div>
+     <div className="pagination">
+      <span className="pagehot active"></span>
+      <span className="pagesex"></span>
+      <span className="pagebig"></span>
+      <span className="pagetit"></span>
+      <span className="pagethickcock"></span>
+     </div>
     </>
   )
 }
