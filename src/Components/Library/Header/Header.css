@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-container{
+    display: flex;
+    justify-content: start;
+}
+.library-heading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 45px;
+    
+}
+
+.search {
+
+   margin-top: 15px;
+   margin-left: 45px;
+}
+
+
+
+.plus{
+    margin-top: 15px;
+    margin-left: 35px;
+}

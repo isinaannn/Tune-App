@@ -8,6 +8,10 @@ import YearSongs from './Components/Home/YearList/YearSongs'
 import NewArrival from './Components/Home/NewArrival/NewArrival'
 import RecentList from './Components/Home/RecentList/RecentList'
 import Header from './Components/Home/Header/Header'
+import HeaderLibrary from './Components/Library/Header/Header'
+import Button from './Components/Library/Tabs/Button'
+import LikedSongs from './Components/Library/LikedSongs/LikedSongs'
+
 
 function App() {
 
@@ -15,7 +19,7 @@ function App() {
   return (
     <div style={{ width: "100%",display: "flex",flexDirection: "column",gap: "15px" }}>
 
-      <div className='header' style={{position: "sticky",top: "32px"}}>
+      {/* <div className='header' style={{position: "sticky",top: "32px"}}>
       <Header />
 
       </div>
@@ -88,11 +92,28 @@ function App() {
             <NewArrival />
           </div>
         </div>
-      </div>
+      </div> */}
+
+
+          <div className='library-header'>
+            <HeaderLibrary />
+          </div>
+
+          <div className='tabs' style={{display: "flex",flexDirection: "row",gap: "10px",marginTop: "20px"}}>
+            <Button name={"Artist"}/>
+            <Button name={"Playlist"}/>
+            <Button name={"Community"}/>
+            <div className='net-icon'>
+                <img src="src/Components/Library/Tabs/swap.png" alt="" style={{height: "20px",width: "20px",marginLeft: "40px"}}/>
+            </div>
+          </div>
+
+          <div className='liked-songs-container' style={{marginTop: "20px"}}>
+          <LikedSongs />
+        </div>
 
 
 
-      
     </div>
   )
 }
