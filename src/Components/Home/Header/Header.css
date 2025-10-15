@@ -6,25 +6,32 @@
 .header-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+
   
 }
-
+.song-container{
+        padding-left: 80px;
+    padding-top: 10px;
+}
 .song{
     color: goldenrod;
+    font-size: 20px;
 }
-.ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    justify-content: center;
+
+.podcast-container{
+        padding-left: 37px;
+    padding-top: 10px;
 }
-.icon{
-    position: absolute;
-    right: 5px;
+.podcast{
+    font-size: 20px;
+    color: #B6B6B6;
 }
-.header-icon{
-    height: 30px;
-    width: 30px;
+
+.icon-container{
+    padding-left: 50px;
+}
+
+.shuffle-icon{
+    width: 35px;
+    height: 35px;
 }
