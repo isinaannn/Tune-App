@@ -1,0 +1,43 @@
+.avtranddrwr{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+}
+.avtr{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    border: 1px solid #ffd700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}
+.drwr{
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #833805;
+    transform: translate(100%);
+}
+.userDetails{
+    width: 90%;
+    margin: 5%;
+    height: 80px;
+}
+
+.userDetails .avtrcontainer{
+      width: 50px;
+    height: 50px;
+    position: fixed;
+    border-radius: 50%;
+
+}
+.userDetails .name{
+    margin: 10px 0 0 10px;
+}
