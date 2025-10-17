@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.music-playing-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.music-playing-bar {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 15px;
+    height: 55px;
+    width: 310px;
+    border-radius: 50px;
+    background: #592400;
+    background: linear-gradient(75deg, rgba(89, 36, 0, 1) 0%, rgba(199, 117, 58, 0.65) 100%);
+    position: fixed;
+    bottom: 20px;
+}
+.music-playing-icons{
+    display: flex;
+    gap: 5px;
+}
+.left-icon{
+    margin-top: 10px;
+}
+.right-icon{
+    margin-top: 10px;
+}
+
+.add-btn{
+ margin-left: 15px;  
+ padding-top: 10px; 
+}
+.add-icon{
+    
+    
+}
+.song-marquee{
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 17px;
+    direction: right;
+}
