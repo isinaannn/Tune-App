@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './Slider.css'
+import Avatar from 'react-avatar';
 export default function Slider(){
       const [count, setCount] = useState(0);
  const Root = useRef();
