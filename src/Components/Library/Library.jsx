@@ -12,11 +12,11 @@ export default function Library(){
      
 
 
-       <div className='library-header' style={{ width: "100%" }}>
+       <div className='library-header' style={{ width: "100%" ,paddingLeft: "30px",paddingRight: "30px"}}>
         <HeaderLibrary />
       </div>
 
-      <div className='tabs' style={{ display: "flex", flexDirection: "row", gap: "10px", marginTop: "20px" }}>
+      <div className='tabs' style={{width: "100%", display: "flex", flexDirection: "row", gap: "10px", marginTop: "20px",paddingLeft: "30px",paddingRight: "30px" }}>
         <Button name={"Artist"} />
         <Button name={"Playlist"} />
         <Button name={"Community"} />
@@ -25,14 +25,13 @@ export default function Library(){
         </div>
       </div>
 
-      <div className='liked-songs-container' style={{ marginTop: "20px" }}>
+      <div className='liked-songs-container' style={{width: "100%", marginTop: "20px",display: "flex",paddingLeft: "30px",paddingRight: "30px" }}>
         <LikedSongs />
       </div>
 
-      <div className='Library-playlist-container' style={{ marginTop: "20px" }}>
-        <div className='playlist-slider-container' style={{ overflow: "hidden", height: "380px", overflowY: "scroll", overflowX: "hidden", scrollbarWidth: "none", scrollBehavior: "smooth" }}>
-          <div className='playlist-card-wrapper' style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
-            <LibraryCard name={"Feel good"} caption={"10 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/94ae9f12-ffda-42c4-a49f-e252d7e2bff3.jpeg"} />
+      <div className='Library-playlist-container' style={{width: "100%", marginTop: "20px",paddingLeft: "30px",paddingRight :"30px" }}>
+        <div className='playlist-slider-container' style={{ overflow: "hidden", height: "100%", overflowY: "scroll", overflowX: "hidden", scrollbarWidth: "none", scrollBehavior: "smooth", display: "flex", flexDirection: "column", gap: "30px"  }}>
+            <LibraryCard name={"Feel good"} caption={"10 songs. 20 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/94ae9f12-ffda-42c4-a49f-e252d7e2bff3.jpeg"} />
             <LibraryCard name={"Trip song"} caption={"20 songs. 2 person"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/download.jpeg"} />
             <LibraryCard name={"Dj song"} caption={"10 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/download (1).jpeg"} />
             <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer"} src={"src/Components/Library/LibraryPlaylist/3739458a-d3c4-43b3-b46b-a7421eb12e66.jpeg"} />
@@ -40,7 +39,7 @@ export default function Library(){
             <LibraryCard type={"artist"} name={"Billie eilish"} caption={"20 songs"} category={"Singer"} src={"src/Components/Library/LibraryPlaylist/b23b6f26-fd93-4413-ad79-e0458e83e33a.jpeg"} />
             <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer/music director"} src={"src/Components/Library/LibraryPlaylist/3739458a-d3c4-43b3-b46b-a7421eb12e66.jpeg"} />
             
-          </div>
+      
         </div>
       </div>
  

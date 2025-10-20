@@ -8,28 +8,30 @@ export default function PlayingAlbum(){
 
 
     return (
-          <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+          <div style={{width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center" }}>
 
             <Banner />
             <Buttons />
-            <div>
+            <div className="trending-container" style={{width: "100%",display: "flex",flexDirection: "column",gap: "5px",paddingLeft: "30px",paddingRight: "30px"}}>
             <TrendingList />
             <TrendingList />
             <TrendingList />
             <TrendingList />
             </div>
-                <div style={{width:"100%"}}>
-                    <h3 style={{textAlign: "start"}}>You might also like</h3>
+
+            <div style={{width: "100%", display: "flex",flexDirection: "column",gap: "20px",paddingBottom: "100px"}}>
+                <div style={{width:"100%",paddingLeft: "30px"}}>
+                    <h3 style={{textAlign: "start",fontSize: "25px",fontWeight: "500"}}>You might also like</h3>
                 </div>
-              <div className='new-arrival-slider-container' style={{ marginTop: "20px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none" }}>
-                    <div className='new-arrival-songs-card-wrapper' style={{ display: "flex", gap: "30px" }}>
+              <div className='new-arrival-slider-container' style={{ marginTop: "0px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none" ,display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px"}}>
                         <RecommendationList />
                         <RecommendationList />
                         <RecommendationList />
                         <RecommendationList />
                 
-                        </div>
+                
                     </div>
+            </div>
 
         </div>
     )

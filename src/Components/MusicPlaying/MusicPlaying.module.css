@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.music-playing-container {
+.musicPlayingContainer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,39 +12,37 @@
     
 }
 
-.music-playing-bar {
+.musicPlayingBar {
     display: flex;
     padding-top: 5px;
     padding-left: 15px;
-    height: 55px;
-    width: 310px;
+    height: 60px;
+    width: 340px;
     border-radius: 50px;
     background: #592400;
     background: linear-gradient(75deg, rgba(89, 36, 0, 1) 0%, rgba(199, 117, 58, 0.65) 100%);
     position: fixed;
     bottom: 20px;
 }
-.music-playing-icons{
+.musicPlayingIcons{
     display: flex;
     gap: 5px;
+    margin-top: 2px;
 }
-.left-icon{
+.leftIcon{
     margin-top: 10px;
 }
-.right-icon{
+.rightIcon{
     margin-top: 10px;
 }
 
-.add-btn{
- margin-left: 15px;  
- padding-top: 10px; 
+.addBtn{
+ margin-left: 25px;  
+ padding-top: 15px; 
 }
-.add-icon{
-    
-    
-}
-.song-marquee{
-    margin-top: 8px;
+
+.songMarquee{
+    margin-top: 10px;
     margin-left: 10px;
     font-size: 17px;
     direction: right;

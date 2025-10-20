@@ -1,17 +1,17 @@
-import './Header.css'
+import styles from './Header.module.css'
 export default function Header(){
 
 
     return (
-        <div className="header-container">
-          <div className='song-container'>
-            <p className='song'>Song</p>
+        <div className={styles.headerContainer}>
+          <div className={styles.songContainer}>
+            <p className={styles.song}>Song</p>
           </div>
-          <div className='podcast-container'>
-            <p className='podcast'>Podcast</p>
+          <div className={styles.podcastContainer}>
+            <p className={styles.podcast}>Podcast</p>
           </div>
-            <div className='icon-container'>
-                <img className='shuffle-icon' src="src/Components/Home/Header/shuffle_14506030.png" alt="" />
+            <div className={styles.iconContainer}>
+                <img className={styles.shuffleIcon} src="src/Components/Home/Header/shuffle_14506030.png" alt="" />
             </div>
         </div>
     )

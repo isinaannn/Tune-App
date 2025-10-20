@@ -4,30 +4,30 @@
     box-sizing: border-box;
 }
 
-.library-card {
+.libraryCard {
     height: 80px;
-    width: 315px;
+    width: 100%;
     display: flex;
     overflow: hidden;
 
 
 }
 
-.image-container {
+.imageContainer {
     width: 100px;
     height: 100%;
     width: 100%;
     background-color: black;
-    
+
 }
 
-.library-image {
+.libraryImage {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.artist-image {
+.artistImage {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -37,12 +37,16 @@
 
 }
 
-.library-details {
-    padding: 0;
+.libraryDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 5px;
+    padding-left: 20px;
     width: 500px;
 }
 
-.library-category {
+.libraryCategory {
     margin-right: 10px;
     margin-top: 30px;
     width: 100%;
@@ -51,17 +55,12 @@
     color: #B6B6B6;
 }
 
-.library-para {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-    margin-top: 0px;
+.libraryPara {
+    align-items: start;
     color: #B6B6B6;
 }
 
-.library-head {
-    margin-left: -10px;
-    padding: 0;
+.libraryHead {
     margin-top: 10px;
     font-size: 20px;
 }

@@ -1,0 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.songCard{
+    background-color: white;
+    border-radius: 0;
+    height: 150px;
+}

@@ -1,43 +1,28 @@
-import './LibraryCard.css'
+import styles from './LibraryCard.module.css'
 
-export default function LibraryCard({ name, caption, src, type ,category}) {
+export default function LibraryCard({ name, caption, src, type, category }) {
 
 
 
     return (
 
-<>
-        { type== "artist" ?
-            (<div className="library-card">
-                <div className="artist-image">
-                    <img className='library-image' src={src} alt="" />
+        <>
+            <div className={styles.libraryCard}>
+                <div className={type == "artist" ? styles.artistImage : styles.imageContainer}>
+                    <img className={styles.libraryImage} src={src} alt="" />
                 </div>
-                <div className="library-details">
-                    <h4 className='library-head'>{name}</h4>
-                    <p className='library-para'>{caption}</p>
+                <div className={styles.libraryDetails}>
+                    <h4 className={styles.libraryHead}>{name}</h4>
+                    <p className={styles.libraryPara}>{caption}</p>
                 </div>
-                <div className="library-category">
-                    <p>{category}</p>
+                <div className={styles.libraryCategory}>
+                    <p className={styles.category}>{category}</p>
                 </div>
 
             </div>
 
-            ) :
-            (<div className="library-card">
-                <div className="image-container">
-                    <img className='library-image' src={src} alt="" />
-                </div>
-                <div className="library-details">
-                    <h4 className='library-head'>{name}</h4>
-                    <p className='library-para'>{caption}</p>
-                </div>
-                <div className="library-category">
-                    <p>{category}</p>
-                </div>
 
-            </div>)}
-            
-           </>
-            )
-    
+        </>
+    )
+
 }

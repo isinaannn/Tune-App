@@ -6,17 +6,20 @@ import Home from './Components/Home/Home'
 import Library from './Components/Library/Library'
 import PlayingAlbum from './Components/PlayingAlbum/PlayingAlbum'
 import MusicPlaying from './Components/MusicPlaying/MusicPlaying'
+import Search from './Components/Search/Search'
+
+
 function App() {
 
 
   return (
-   <>
-   {/* <Home />
-   <Library /> */}
-   <PlayingAlbum />
-   <MusicPlaying />
-
-   </>
+    <>
+      <Home />
+      <Library />
+      <PlayingAlbum />
+      <MusicPlaying />
+      <Search />
+    </>
   )
 }
 

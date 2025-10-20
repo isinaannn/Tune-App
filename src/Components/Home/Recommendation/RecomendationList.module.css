@@ -8,7 +8,7 @@
     width: 200px;
      flex: 0 0 auto;
 }
-.recommendation-box{
+.recommendationBox{
     height: 200px;
     width: 200px;
     background-color: rgb(192, 185, 185);
@@ -18,7 +18,7 @@
     overflow: hidden;
 
 }
-.inner-box{
+.innerBox{
     height: 100px;
     width: 100px;
 
@@ -27,26 +27,28 @@
     
 }
 
-.inner-box1{
+.innerBox1{
     background-color: red;
 }
-.inner-box2{
+.innerBox2{
     background-color: rgb(0, 45, 107);
 }
-.inner-box3{
+.innerBox3{
     background-color: rgb(25, 151, 0);
 }
-.inner-box4{
+.innerBox4{
     background-color: rgb(0, 0, 0);
 }
-.recommendation-details{
+.recommendationDetails{
     word-break: break-all;
 }
 
-img{
+.img{
     object-fit: cover;
 }
-p{
+.para{
+    margin-top: 5px;
     font-size: 20px;
     font-weight: 400;
+    text-align: start;
 }

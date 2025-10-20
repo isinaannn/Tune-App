@@ -5,32 +5,32 @@
     box-sizing: border-box;
 }
 
-.liked-songs-box{
-    width: 320px;
+.likedSongsBox{
+    width: 100%;
     height: 60px;
     background-color: rgb(98, 84, 50);
     border-radius: 15px / 18px;
     display: flex;
 }
-.liked-icon{
+.likedIcon{
     margin-top: 14px;
     margin-left: 15px;
 }
-.songs-details{
+.songsDetails{
     margin-left: 15px;
 }
-h4{
+.heading{
     font-weight: 400;
     margin-top: 5px;
     font-size: 18px;
 
 }
-p{
+.para{
     margin-top: -5px;
     font-size: 13px;
 }
 
-.pin-icon-container{
+.pinIconContainer{
     margin-left: 120px;
     margin-top: 20px;
 }

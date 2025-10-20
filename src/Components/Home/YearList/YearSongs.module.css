@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.songs-card-container {
+.songsCardContainer {
     width: 200px;
     
     
@@ -20,16 +20,18 @@
 
 
 }
-.card-details{
+.cardDetails{
     word-break: break-all;
 }
 
-p {
+.para {
+    margin-top: 5px;
     font-size: 20px;
     font-weight: 400;
+    text-align: start;
 }
 
-img {
+.img {
     width: 100%;
     height: 100%;
     object-fit: cover;

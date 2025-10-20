@@ -1,25 +1,25 @@
-import './TrendingList.css'
+import styles from './TrendingList.module.css'
 export default function TrendingList() {
 
     return (
         <div style={{ width: "100%" }}>
 
-            <div className='trendinglist-container'>
+            <div className={styles.trendinglistContainer}>
 
-                <div className="song-card">
+                <div className={styles.songCard}>
 
-                    <div className='song-image'>
+                    <div className={styles.songImage}>
                         <img src="src/Components/Home/TrendingList/just take a breath.jpeg" alt="" />
                     </div>
 
-                    <div className='song-details'>
-                        <h3>Song name</h3>
-                        <p>artist name - movie name</p>
+                    <div className={styles.songDetails}>
+                        <h3 className={styles.songName}>Song name</h3>
+                        <p className={styles.songCaption}>artist name - movie name</p>
                     </div>
 
-                    <div className='add-button'>
+                    <div className={styles.addButton}>
 
-                        <img src="src/Components/Home/TrendingList/icons8-add-100 (1).png" alt="" className='add-img' />
+                        <img src="src/Components/Home/TrendingList/icons8-add-100 (1).png" alt="" className={styles.addImg} />
                     </div>
                 </div>
             </div>

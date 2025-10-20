@@ -1,10 +1,10 @@
-import './button.css'
+import styles from './button.module.css'
 export default function Button(props){
 
 
     return (
-        <div>
-            <button className='button-tab'>{props.name}</button>
+        <div style={{width: "100%"}}>
+            <button className={styles.buttonTab}>{props.name}</button>
         </div>
     )
 }

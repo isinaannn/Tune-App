@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.Buttons-container{
+.buttonsContainer{
    width: 100%;
     display: flex;
     flex-direction: row;
@@ -13,37 +13,37 @@
     
 
 }
-.plus-btn{
+.plusBtn{
     margin-top: 10px;
     margin-left: 10px;
     
 }
-.plus-icon{
+.plusIcon{
     height: 30px;
     width: 30px;
 }
-.shuffle-btn{
+.shuffleBtn{
     margin-top: 10px;
     margin-left: 20px;
 }
-.shuffle-icon{
+.shuffleIcon{
     height: 50px;
     width: 50px;
 }
-.share-btn{
+.shareBtn{
  margin-top: 10px;
  margin-left: 20px;
 }
-.share-icon{
+.shareIcon{
  height: 30px;
  width: 30px;
 }
 
-.menu-btn{
+.menuBtn{
 margin-top: 10px;
 margin-left: 120px;
 }
-.menu-icon{
+.menuIcon{
     height: 30px;
     width: 30px;
     

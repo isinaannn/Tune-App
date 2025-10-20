@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headerContainer {
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+
+}
+
+.headingContainer {
+    padding: 0;
+    margin-left: 50px;
+
+}
+
+.libraryHeading {
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 0px;
+    width: 150px;
+
+}
+
+.search {
+
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+
+
+.plus {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: -20px;
+}

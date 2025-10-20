@@ -3,13 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-.header-container{
+.headerContainer{
     display: flex;
     flex-direction: row;
 
   
 }
-.song-container{
+.songContainer{
         padding-left: 80px;
     padding-top: 10px;
 }
@@ -18,7 +18,7 @@
     font-size: 20px;
 }
 
-.podcast-container{
+.podcastContainer{
         padding-left: 37px;
     padding-top: 10px;
 }
@@ -27,11 +27,11 @@
     color: #B6B6B6;
 }
 
-.icon-container{
+.iconContainer{
     padding-left: 50px;
 }
 
-.shuffle-icon{
+.shuffleIcon{
     width: 35px;
     height: 35px;
 }
