@@ -9,7 +9,7 @@ import Avataar from './COMPONENTS/Avatar/Avataar'
 
 function App() {
 
- return  (<Avataar/>)
+ return  (<Slider />)
  
 }
 
