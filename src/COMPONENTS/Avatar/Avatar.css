@@ -1,6 +1,6 @@
 .avtranddrwr {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -8,10 +8,11 @@
 .avtr {
     
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left:10px;
     cursor: pointer;
     z-index: 10;
+   
     transition: transform 0.3s ease-in-out;
 }
 
@@ -43,6 +44,7 @@
     border-radius: 50%;
     grid-row: span 2;
     align-self: center;
+    background-color: aliceblue;
 
 }
 
@@ -76,14 +78,3 @@
 
 }
 
-.bottomNav {
-    width: 100%;
-    height: 80px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-
-    background-color: rgba(121, 52, 12, 0.253);
-    filter: blur(5px);
-    transition: transform 0.3s;
-}
