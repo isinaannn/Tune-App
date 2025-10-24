@@ -1,0 +1,43 @@
+.playerHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.backIconContainer{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.songCard{
+    display: flex;
+    margin-top: 30px;
+   
+
+    
+}
+.imgContainer{
+    width: 50px;
+    height: 50px;
+     border-radius: 8px / 10px;
+    overflow: hidden;
+  
+}
+.songDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 15px;
+}
+.heading{
+    font-weight: 400;
+}
+.para{
+     color: #B6B6B6;
+}
+
+

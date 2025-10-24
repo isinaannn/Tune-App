@@ -12,15 +12,15 @@
 }
 .searchBar{
     display: flex;
+    position: relative;
 }
 .searchInput{
     height: 40px;
-    width: 260px;
+    width: 100%;
     border-radius: 50px;
     border-width: 0;
-    background-color: black;
+    background-color: rgb(42, 38, 38);
     padding-left: 55px;
-    position: relative;
     font-size: 20px;
     font-weight: 500;
 
@@ -28,13 +28,15 @@
 }
 .searchIcon{
     position: absolute;
-    margin-left: 20px;
-    margin-top: 8px;
+    left: 10px;
+    top: 5px;
+  
 }
 .cameraIcon{
   position: absolute;
-  margin-left: 215px;
-  margin-top: 5px;
+  right: 20px;
+  top: 6px;
+ 
 }
 
 .searchMike{

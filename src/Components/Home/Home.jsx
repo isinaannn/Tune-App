@@ -26,7 +26,7 @@ export default function Home() {
                 <TrendingList />
                 </div>
 
-                <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "10px", paddingRight: "25px" }}>
+                <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "20px", paddingRight: "25px" }}>
                     <a href="" style={{ color: "#B6B6B6", fontWeight: "300", fontWeight: "500" }}>View all</a>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export default function Home() {
             <div className='Recents' style={{ width: "100%" }}>
                 <h3 style={{ textAlign: "start", fontSize: "25px",marginLeft: "30px",fontWeight: "500" }}>Recents</h3>
 
-                <div className='recent-slider-container' style={{ marginTop: "20px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", overscrollBehavior: "smooth", scrollbarWidth: "none",display: "flex", gap: "30px", paddingLeft: "30px" }}>
+                <div className='recent-slider-container' style={{ marginTop: "20px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", overscrollBehavior: "smooth", scrollbarWidth: "none",display: "flex", gap: "30px", paddingLeft: "30px",paddingRight: "30px" }}>
                         <RecentList />
                         <RecentList />
                         <RecentList />

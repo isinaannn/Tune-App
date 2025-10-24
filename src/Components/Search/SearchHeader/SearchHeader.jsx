@@ -9,7 +9,7 @@ export default function SearchHeader(){
 
             </div>
             <div className={styles.searchHeading}>
-                <h3>Search</h3>
+                <h3 className={styles.h3}>Search</h3>
             </div>
         </div>
     )
