@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import './Avatar.css'
 import Avatar from 'react-avatar';
 import Draawer from '../Drawer/Draawer';
+import BottomNav from '../BottomNav/BottomNav'
 const Avataar = () => {
     const open = useRef(false);
     function onDrawerOpenandClose() {
@@ -36,10 +37,12 @@ const Avataar = () => {
     const url = "https://images.fineartamerica.com/images-medium-large-5/buffalo-profile-thomas-preston.jpg"
     return (
         <div className="avtranddrwr">
-            <Avatar className="avtr" name="Jurrasic Park ghh bhi"size={25} src={url} maxInitials={2} round onClick={onDrawerOpenandClose} />
+            <Avatar className="avtr" name="Jurrasic Park ghh bhi"size={25} src={url} maxInitials={2} style={{
+                
+            }} round onClick={onDrawerOpenandClose} />
             <Draawer closeDrawer={onDrawerOpenandClose} />
             <div className="musicPlay"></div>
-           
+           <BottomNav />
         </div>
     )
 }
