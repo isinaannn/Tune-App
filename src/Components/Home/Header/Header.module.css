@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+
+  
+}
+.songContainer{
+        padding-left: 80px;
+    padding-top: 10px;
+}
+.song{
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.podcastContainer{
+        padding-left: 37px;
+    padding-top: 10px;
+}
+.podcast{
+    font-size: 20px;
+    color: #B6B6B6;
+}
+
+.iconContainer{
+    padding-left: 50px;
+}
+
+.shuffleIcon{
+    width: 35px;
+    height: 35px;
+}

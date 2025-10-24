@@ -1,0 +1,22 @@
+.ButtonGroup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+
+}
+.prevContainer{
+    margin-left: 40px;
+}
+.playContainer{
+    margin-left: 20px;
+}
+.nextContainer{
+    margin-left: 20px;
+}
+.addContainer{
+    margin-left: 40px;
+}

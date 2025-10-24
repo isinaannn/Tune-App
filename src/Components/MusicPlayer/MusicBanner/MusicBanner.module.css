@@ -1,0 +1,57 @@
+.musicBanner {
+    position: relative; /* needed for absolute blur layers */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+/* Blur layers positioned behind the image */
+.blur1, .blur2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 0; /* behind image */
+    filter: blur(5px);
+    
+}
+
+.blur1 {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(125, 116, 116);
+    
+    
+}
+
+.blur2 {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(80, 74, 74);
+}
+
+/* Centered image on top */
+.banner {
+    position: relative;
+    z-index: 1; /* above blur layers */
+}
+
+.bannerImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 0px;
+}
+
+/* Music details below the image */
+.musicDetails {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin-top: 50px;
+
+}

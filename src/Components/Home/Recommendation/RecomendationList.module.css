@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.recommendation{
+    width: 200px;
+     flex: 0 0 auto;
+}
+.recommendationBox{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(192, 185, 185);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px / 18px;
+    overflow: hidden;
+
+}
+.innerBox{
+    height: 100px;
+    width: 100px;
+
+    
+    
+    
+}
+
+.innerBox1{
+    background-color: red;
+}
+.innerBox2{
+    background-color: rgb(0, 45, 107);
+}
+.innerBox3{
+    background-color: rgb(25, 151, 0);
+}
+.innerBox4{
+    background-color: rgb(0, 0, 0);
+}
+.recommendationDetails{
+    word-break: break-all;
+}
+
+.img{
+    object-fit: cover;
+}
+.para{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+}

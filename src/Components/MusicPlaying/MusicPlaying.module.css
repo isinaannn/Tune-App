@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.musicPlayingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.musicPlayingBar {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 15px;
+    height: 60px;
+    width: 340px;
+    border-radius: 50px;
+    background: #592400;
+    background: linear-gradient(75deg, rgba(89, 36, 0, 1) 0%, rgba(199, 117, 58, 0.65) 100%);
+    position: fixed;
+    bottom: 20px;
+}
+.musicPlayingIcons{
+    display: flex;
+    gap: 5px;
+    margin-top: 2px;
+}
+.leftIcon{
+    margin-top: 10px;
+}
+.rightIcon{
+    margin-top: 10px;
+}
+
+.addBtn{
+ margin-left: 25px;  
+ padding-top: 15px; 
+}
+
+.songMarquee{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+    direction: right;
+}

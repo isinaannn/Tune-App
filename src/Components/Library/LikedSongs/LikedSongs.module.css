@@ -1,0 +1,36 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.likedSongsBox{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(98, 84, 50);
+    border-radius: 15px / 18px;
+    display: flex;
+}
+.likedIcon{
+    margin-top: 14px;
+    margin-left: 15px;
+}
+.songsDetails{
+    margin-left: 15px;
+}
+.heading{
+    font-weight: 400;
+    margin-top: 5px;
+    font-size: 18px;
+
+}
+.para{
+    margin-top: -5px;
+    font-size: 13px;
+}
+
+.pinIconContainer{
+    margin-left: 120px;
+    margin-top: 20px;
+}

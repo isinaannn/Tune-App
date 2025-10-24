@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.buttonsContainer{
+   width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.plusBtn{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.plusIcon{
+    height: 30px;
+    width: 30px;
+}
+.shuffleBtn{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.shuffleIcon{
+    height: 50px;
+    width: 50px;
+}
+.shareBtn{
+ margin-top: 10px;
+ margin-left: 20px;
+}
+.shareIcon{
+ height: 30px;
+ width: 30px;
+}
+
+.menuBtn{
+margin-top: 10px;
+margin-left: 120px;
+}
+.menuIcon{
+    height: 30px;
+    width: 30px;
+    
+}

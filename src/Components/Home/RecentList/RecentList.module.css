@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.recentCardContainer{
+
+    width: 100px;
+
+    
+}
+.recentImageContainer{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    overflow: hidden;
+}
+.para{
+    margin-top: 5px;
+    font-size: 15px;
+    text-align: start;
+}
+.img{
+    object-fit: cover;
+    
+}

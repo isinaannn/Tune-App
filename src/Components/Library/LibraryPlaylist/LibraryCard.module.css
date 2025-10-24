@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.libraryCard {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+
+}
+
+.imageContainer {
+    width: 100px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+}
+
+.libraryImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.artistImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+
+
+}
+
+.libraryDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 500px;
+    
+
+}
+
+.libraryCategory {
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: #B6B6B6;
+    text-align: start;
+
+   
+}
+
+.libraryPara {
+    align-items: start;
+    color: #B6B6B6;
+    text-align: left;
+
+   
+}
+
+.libraryHead {
+    margin-top: 10px;
+    font-size: 20px;
+}
