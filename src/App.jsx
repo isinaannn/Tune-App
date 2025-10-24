@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -8,6 +8,11 @@ import PlayingAlbum from './Components/PlayingAlbum/PlayingAlbum'
 import MusicPlaying from './Components/MusicPlaying/MusicPlaying'
 import Search from './Components/Search/Search'
 import MusicPlayer from './Components/MusicPlayer/MusicPlayer'
+
+
+import Slider from './COMPONENTS/Slider'
+import Draawer from './COMPONENTS/Drawer/Draawer'
+import Avataar from './COMPONENTS/Avatar/Avataar'
 
 
 function App() {
@@ -20,9 +25,7 @@ function App() {
       {/* <PlayingAlbum /> */}
       {/* <MusicPlaying /> */}
       {/* <Search /> */}
-      <MusicPlayer />
-    </>
-  )
+      <MusicPla
 }
 
 export default App
