@@ -8,7 +8,7 @@ export default function PlayingAlbum(){
 
 
     return (
-          <div style={{width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center" }}>
+          <div style={{width: "100%", display: "flex", flexDirection: "column", gap: "10px", alignItems: "center" }}>
 
             <Banner />
             <Buttons />

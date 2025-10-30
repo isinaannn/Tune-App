@@ -1,10 +1,18 @@
+import { Link, useNavigate } from 'react-router'
 import styles from './MusicPlaying.module.css'
 
 export default function MusicPlaying() {
+            const navigate=useNavigate()
+
+            const handleClick=()=>{
+                navigate('/music-player')
+            }
 
 
     return (
-        <div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+       
+             <div onClick={handleClick} style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+            
             <div className={styles.musicPlayingContainer}>
                 <div className={styles.musicPlayingBar}>
                     <div className={styles.musicPlayingIcons}>
@@ -35,5 +43,7 @@ export default function MusicPlaying() {
                 </div>
             </div>
         </div>
+    
+       
     )
 }
