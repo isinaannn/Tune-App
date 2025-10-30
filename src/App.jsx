@@ -10,7 +10,7 @@ import Search from './Components/Search/Search'
 import MusicPlayer from './Components/MusicPlayer/MusicPlayer'
 
 
-import Slider from './COMPONENTS/Slider'
+import Slider from './COMPONENTS/Home/Carousel/Slider'
 import Draawer from './COMPONENTS/Drawer/Draawer'
 import Avataar from './COMPONENTS/Avatar/Avataar'
 
@@ -20,12 +20,8 @@ function App() {
 
   return (
     <>
-      {/* <Home />
-      <Library /> */}
-      {/* <PlayingAlbum /> */}
-      {/* <MusicPlaying /> */}
-      {/* <Search /> */}
-      <MusicPla
+     <Avataar />
+      </>)
 }
 
 export default App
