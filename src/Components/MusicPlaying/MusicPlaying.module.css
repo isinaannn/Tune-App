@@ -9,6 +9,8 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    position: fixed;
+    bottom: 80px;
     
 }
 
@@ -19,10 +21,9 @@
     height: 60px;
     width: 340px;
     border-radius: 50px;
-    background: #592400;
-    background: linear-gradient(75deg, rgba(89, 36, 0, 1) 0%, rgba(199, 117, 58, 0.65) 100%);
-    position: fixed;
-    bottom: 20px;
+    /* background: #794602; */
+    background: linear-gradient(75deg, rgb(61, 37, 0) 0%, rgb(98, 59, 25) 100%);
+    
 }
 .musicPlayingIcons{
     display: flex;

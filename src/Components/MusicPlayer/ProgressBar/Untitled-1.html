@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,14 +25,21 @@
       transition: stroke-dashoffset 0.3s ease;
     }
 
+    .wave-progress .bg-track {
+      transition: opacity 0.3s ease;
+      opacity: calc(1 - (var(--progress, 0) / 100));
+    }
+
+
     /* Optional: add a gradient animation */
     .wave-progress linearGradient stop {
       transition: stop-color 0.5s;
     }
   </style>
 </head>
+
 <body>
-  <div class="wave-progress" style="--progress: 60;">
+  <div class="wave-progress" style="--progress: 50;">
     <svg viewBox="0 0 400 12" preserveAspectRatio="none">
       <defs>
         <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -40,14 +48,13 @@
           <stop offset="100%" stop-color="#ea580c" />
         </linearGradient>
       </defs>
+      <rect class="bg-track" x="0" y="4.5" width="400" height="3" fill="#444" rx="1.5" />
+
       <path
         d="M 0,6 Q 10,2 20,6 T 40,6 T 60,6 T 80,6 T 100,6 T 120,6 T 140,6 T 160,6 T 180,6 T 200,6 T 220,6 T 240,6 T 260,6 T 280,6 T 300,6 T 320,6 T 340,6 T 360,6 T 380,6 T 400,6"
-        stroke="url(#waveGradient)"
-        stroke-width="3"
-        fill="none"
-        stroke-linecap="round"
-      />
+        stroke="url(#waveGradient)" stroke-width="3" fill="none" stroke-linecap="round" />
     </svg>
   </div>
 </body>
+
 </html>

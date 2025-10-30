@@ -17,7 +17,7 @@ export default function Home() {
 
             </div>
 
-            <div className='Trending' style={{width: "100%"}}>
+            <div className='Trending' style={{width: "100%",marginTop: "20px"}}>
                 <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" ,marginLeft: "30px",fontWeight: "500"}}>Trending songs</h3>
                <div style={{width: "100%",display: "flex",flexDirection: "column",gap: "5px",paddingLeft: "30px",paddingRight: "30px"}}>
                 <TrendingList />
