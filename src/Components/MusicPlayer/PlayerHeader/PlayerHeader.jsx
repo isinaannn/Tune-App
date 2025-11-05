@@ -1,8 +1,13 @@
 
+import { useNavigate } from 'react-router';
 import styles from './PlayerHeader.module.css';
 
-const PlayerHeader = () => (
-
+const PlayerHeader = () => {
+    const navigate=useNavigate()
+    const handleClick=()=>{
+        navigate('/playing-album')
+    }
+    return (
     <div className={styles.playerHeader}>
         <div className={styles.backIconContainer}>
             <svg
@@ -26,7 +31,7 @@ const PlayerHeader = () => (
             </svg>
 
         </div>
-        <div className={styles.songCard}>
+        <div onClick={handleClick} className={styles.songCard}>
             <div className={styles.imgContainer}>
                 <img src="src/Components/PlayingAlbum/Banner/wp15786026-lokah-wallpapers.jpg" alt="" />
             </div>
@@ -38,7 +43,8 @@ const PlayerHeader = () => (
 
     </div>
 
-);
+)
+};
 
 
 

@@ -10,14 +10,14 @@ export default function Home() {
 
 
     return (
-        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center" }}>
+        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center",zIndex:"-1" }}>
 
             <div className='header' style={{ position: "sticky", top: "20px" }}>
                 <Header />
 
             </div>
 
-            <div className='Trending' style={{width: "100%"}}>
+            <div className='Trending' style={{width: "100%",marginTop: "20px"}}>
                 <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" ,marginLeft: "30px",fontWeight: "500"}}>Trending songs</h3>
                <div style={{width: "100%",display: "flex",flexDirection: "column",gap: "5px",paddingLeft: "30px",paddingRight: "30px"}}>
                 <TrendingList />
@@ -76,7 +76,7 @@ export default function Home() {
             <div className='arrival-songs-container' style={{ width: "100%" ,marginBottom: "100px"}}>
                 <h3 style={{ textAlign: "start",marginLeft: "30px",fontSize: "25px",fontWeight: "500" }}>New arrival songs</h3>
 
-                <div className='new-arrival-slider-container' style={{ marginTop: "20px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none",display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px" }}>
+                <div className='new-arrival-slider-container' style={{ marginTop: "20px",marginBottom:"50px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none",display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px" }}>
                         <NewArrival />
                         <NewArrival />
                         <NewArrival />
