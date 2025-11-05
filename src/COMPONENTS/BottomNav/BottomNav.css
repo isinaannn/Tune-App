@@ -27,17 +27,18 @@
 
 .add-component{
     position: absolute;
-    bottom: 60px;
+    bottom: 0px;
     width: 100%;
-    height:calc(var(--btm-nav) - 60px);
-    background:  rgba(238, 169, 128, 0.13);
+    height:calc(var(--btm-nav) - 0px);
+    background:  rgb(112, 42, 4);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+    z-index: -1;
 }
 
 .add-component .add-cmpnnt-ovrly{
     position: absolute;
-    bottom: calc(var(--btm-nav) - 60px);
+    bottom: calc(var(--btm-nav) - 0px);
     left: 0;
     width: 100%;
     height: calc(100dvh - var(--btm-nav));

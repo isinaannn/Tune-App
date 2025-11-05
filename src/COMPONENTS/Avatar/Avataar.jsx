@@ -45,7 +45,6 @@ const Avataar = () => {
                 
             }} round onClick={onDrawerOpenandClose} />
             <Draawer closeDrawer={onDrawerOpenandClose} />
-            {/* <div className="musicPlay"></div> */}
            <BottomNav />
         </div>
     )

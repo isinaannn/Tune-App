@@ -7,10 +7,15 @@
 .libraryCard {
     height: 80px;
     width: 100%;
+    flex: 0 0 auto;
     display: flex;
     
 
 
+}
+
+.libraryCard:last-child{
+    margin-bottom: 50px;
 }
 
 .imageContainer {
