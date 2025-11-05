@@ -5,6 +5,10 @@ import RecommendationList from './Recommendation/RecommendationList'
 import RecentList from './RecentList/RecentList'
 import YearSongs from './YearList/YearSongs'
 import NewArrival from './NewArrival/NewArrival'
+import Slider from './Slider/Slider'
+
+
+
 
 export default function Home() {
 
@@ -16,9 +20,13 @@ export default function Home() {
                 <Header />
 
             </div>
+               
+            <div className='slider-container' style={{marginTop: "40px"}}>
+                 <Slider />
+            </div>
 
-            <div className='Trending' style={{width: "100%",marginTop: "20px"}}>
-                <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" ,marginLeft: "30px",fontWeight: "500"}}>Trending songs</h3>
+            <div className='Trending' style={{width: "100%",marginTop: "0px"}}>
+                <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px" ,marginLeft: "30px",fontWeight: "500",color: "#e2e2e2"}}>Trending songs</h3>
                <div style={{width: "100%",display: "flex",flexDirection: "column",gap: "5px",paddingLeft: "30px",paddingRight: "30px"}}>
                 <TrendingList />
                 <TrendingList />

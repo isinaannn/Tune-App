@@ -11,7 +11,7 @@ export default function MusicPlaying() {
 
     return (
        
-             <div onClick={handleClick} style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+             <div className='musicPlay' onClick={handleClick} style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
             
             <div className={styles.musicPlayingContainer}>
                 <div className={styles.musicPlayingBar}>

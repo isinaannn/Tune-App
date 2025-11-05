@@ -11,8 +11,10 @@ const Avataar = () => {
         const avtr = document.querySelector(".avtr");
         const avtrIndrwr = document.querySelector(".avtrcontainer");
         const bottomNav = document.querySelector(".bottomNav");
-        // const playingMusic = document.querySelector(".musicPlay");
-        // playingMusic.classList.toggle("hidemusicPlay");
+        const playingMusic = document.querySelector(".musicPlay");
+        playingMusic.classList.toggle("hidemusicPlay");
+        console.log(playingMusic)
+
         console.log("avatar",avtr.offsetLeft,avtr.offsetTop);
         console.log("avatar container",avtrIndrwr.offsetLeft,avtrIndrwr.offsetTop);
         console.log("Drawer",drwr.offsetLeft,drwr.offsetTop);

@@ -10,7 +10,7 @@ import Search from './Components/Search/Search'
 import MusicPlayer from './Components/MusicPlayer/MusicPlayer'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 
-import Slider from './COMPONENTS/Slider'
+
 import Draawer from './COMPONENTS/Drawer/Draawer'
 import Avataar from './COMPONENTS/Avatar/Avataar'
 import BottomNav from './COMPONENTS/BottomNav/BottomNav'
@@ -30,14 +30,16 @@ function App() {
         path: '/search', element: <>
           <MusicPlaying />
           <Search />
-          <BottomNav /></>
+       
+           <Avataar /></>
+          
       },
       {
         path: '/library', element: <>
           <Library />
           <MusicPlaying />
-          <BottomNav />
-        </>
+         
+         <Avataar /></>
       },
       {
         path: '/music-player', element: <>

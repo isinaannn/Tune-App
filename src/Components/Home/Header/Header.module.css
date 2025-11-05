@@ -1,37 +1,42 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-.headerContainer{
+
+.headerContainer {
     display: flex;
     flex-direction: row;
 
-  
+
 }
-.songContainer{
-        padding-left: 80px;
+
+.songContainer {
+    padding-left: 80px;
     padding-top: 10px;
 }
-.song{
-    color: goldenrod;
+
+.song {
+    color:
+        #ebc16d;
     font-size: 20px;
 }
 
-.podcastContainer{
-        padding-left: 37px;
+.podcastContainer {
+    padding-left: 37px;
     padding-top: 10px;
 }
-.podcast{
+
+.podcast {
     font-size: 20px;
     color: #B6B6B6;
 }
 
-.iconContainer{
+.iconContainer {
     padding-left: 50px;
 }
 
-.shuffleIcon{
+.shuffleIcon {
     width: 35px;
     height: 35px;
 }
