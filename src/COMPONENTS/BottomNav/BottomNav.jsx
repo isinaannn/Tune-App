@@ -19,7 +19,6 @@ export default function BottomNav() {
     return (
         <div className="bottomNav">
             <div className="add-component">
-                <p>hell world</p>
                 <div className="add-cmpnnt-ovrly" onClick={closeadd}>
                    
                 </div>
