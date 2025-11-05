@@ -37,10 +37,8 @@ export default function Library(){
             <LibraryCard name={"Feel good"} caption={"10 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/94ae9f12-ffda-42c4-a49f-e252d7e2bff3.jpeg"} />
             <LibraryCard type={"artist"} name={"Billie eilish"} caption={"20 songs"} category={"Singer"} src={"src/Components/Library/LibraryPlaylist/b23b6f26-fd93-4413-ad79-e0458e83e33a.jpeg"} />
             <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer/music director"} src={"src/Components/Library/LibraryPlaylist/3739458a-d3c4-43b3-b46b-a7421eb12e66.jpeg"} />
-            
-      
-        </div>
-     
+       
+      </div>
  
 
     </div>

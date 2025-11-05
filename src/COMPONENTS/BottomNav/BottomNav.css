@@ -47,8 +47,8 @@
 
 }
 
-.bottomNav button:active{
-        background: red;
-        color: rgb(140, 51, 51);
+.bottomNav svg:active{
+        
+        color: rgb(255, 190, 79);
     }
 

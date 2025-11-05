@@ -22,7 +22,7 @@
     width: 340px;
     border-radius: 50px;
     /* background: #794602; */
-    background: linear-gradient(75deg, rgb(61, 37, 0) 0%, rgb(98, 59, 25) 100%);
+    background: linear-gradient(75deg, rgba(52, 35, 27) 0%, rgba(104, 58, 34) 100%);
     
 }
 .musicPlayingIcons{

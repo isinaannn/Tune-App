@@ -1,0 +1,75 @@
+.slider{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width: none;
+    gap: 60px;
+    flex: 0 0 auto;
+    position: relative;
+   
+}
+
+.slide{
+    flex: 0 0 auto;
+    width: 50%;
+    height: 200px;
+    scroll-snap-align: center;
+    scrollbar-width: none;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.slide:first-child{
+  margin-left: 40%;
+}
+.slide:last-child{
+  margin-right: 40%;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;       /* default, but explicit */
+  overflow-x: auto;          /* enables horizontal scroll */
+  scroll-snap-type: x mandatory; /* optional: for snapping */
+  gap: 1rem;                 /* spacing between items */
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+}
+
+.flex-item {
+  flex: 0 0 auto;            /* prevents shrinking, keeps width */
+  min-width: 200px;          /* or any fixed width */
+  scroll-snap-align: center; /* optional: for snapping */
+  background: #eee;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.pagination{
+  flex-shrink: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination span{
+  width: 10px;
+  height: 20px;
+  border-radius: 50px;
+  /* border: 1px solid tomato; */
+  transition: all 0.5s;
+  background-color: #b1b1b1;
+}
+
+.pagination .active{
+  height: 30px;
+  background-color: #ebc16d;
+
+}

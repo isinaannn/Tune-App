@@ -11,6 +11,7 @@
     right: 0;
     background-color: rgba(200, 0, 0, 0.2);
     display: none;
+  
  
 }
 
@@ -23,6 +24,7 @@
     background-color: tomato;
     transform: translate(100%,0);
     transition: opacity 0.3s ease-in-out;
+    z-index: 2;
    
 
   
