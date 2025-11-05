@@ -4,10 +4,10 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './COMPONENTS/Home/Home'
 import Library from './COMPONENTS/Library/Library'
-import PlayingAlbum from './Components/PlayingAlbum/PlayingAlbum'
+import PlayingAlbum from './COMPONENTS/PlayingAlbum/PlayingAlbum'
 import MusicPlaying from './COMPONENTS/MusicPlaying/MusicPlaying'
 import Search from './COMPONENTS/Search/Search'
-import MusicPlayer from './Components/MusicPlayer/MusicPlayer'
+import MusicPlayer from './COMPONENTS/MusicPlayer/MusicPlayer'
 import { createBrowserRouter, RouterProvider, Routes, Route, Outlet } from 'react-router'
 
 import Draawer from './COMPONENTS/Drawer/Draawer'
@@ -56,13 +56,14 @@ function App() {
             //Album which comes inside the Main Layout
             path: 'playing-album', element: <>
               <PlayingAlbum />
+              <BottomNav/>
 
             </>
           }
         ]
       },
       {
-        path:"/musicplayer",
+        path:"/music-player",
         element:<MusicPlayer/>
       }
     ]

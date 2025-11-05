@@ -23,7 +23,7 @@ export default function PlayingAlbum(){
                 <div style={{width:"100%",paddingLeft: "30px"}}>
                     <h3 style={{textAlign: "start",fontSize: "25px",fontWeight: "500"}}>You might also like</h3>
                 </div>
-              <div className='new-arrival-slider-container' style={{ marginTop: "0px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none" ,display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px"}}>
+              <div className='new-arrival-slider-container' style={{ marginTop: "0px",marginBottom:"50px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none" ,display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px"}}>
                         <RecommendationList />
                         <RecommendationList />
                         <RecommendationList />
