@@ -44,13 +44,12 @@
 .musicPlay {
     width: 90%;
     height: 80px;
-    border: 1px solid greenyellow;
     border-radius: 50px;
     position: fixed;
     left: 50%;
     transform: translateX(-50%) translateY(min(0px, calc((-1 * var(--btm-nav)) + 60px)));
-    bottom: 100px;
-    transition: transform 0.3s;
+    bottom: 60px;
+    transition: transform 0.2s;
 }
 
 .hidemusicPlay {

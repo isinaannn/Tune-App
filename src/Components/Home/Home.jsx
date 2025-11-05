@@ -10,7 +10,7 @@ export default function Home() {
 
 
     return (
-        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center" }}>
+        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center",zIndex:"-1" }}>
 
             <div className='header' style={{ position: "sticky", top: "20px" }}>
                 <Header />

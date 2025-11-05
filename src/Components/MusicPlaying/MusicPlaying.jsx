@@ -11,9 +11,9 @@ export default function MusicPlaying() {
 
     return (
        
-             <div onClick={handleClick} style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+             <div onClick={handleClick}  style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
             
-            <div className={styles.musicPlayingContainer}>
+            <div className={styles.musicPlayingContainer + " musicPlay" }>
                 <div className={styles.musicPlayingBar}>
                     <div className={styles.musicPlayingIcons}>
                         <svg className={`${styles.leftIcon} bi bi-chevron-left`} xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">

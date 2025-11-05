@@ -2,64 +2,74 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './Components/Home/Home'
-import Library from './Components/Library/Library'
+import Home from './COMPONENTS/Home/Home'
+import Library from './COMPONENTS/Library/Library'
 import PlayingAlbum from './Components/PlayingAlbum/PlayingAlbum'
-import MusicPlaying from './Components/MusicPlaying/MusicPlaying'
-import Search from './Components/Search/Search'
+import MusicPlaying from './COMPONENTS/MusicPlaying/MusicPlaying'
+import Search from './COMPONENTS/Search/Search'
 import MusicPlayer from './Components/MusicPlayer/MusicPlayer'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { createBrowserRouter, RouterProvider, Routes, Route, Outlet } from 'react-router'
 
-import Slider from './COMPONENTS/Home/Carousel/Slider'
 import Draawer from './COMPONENTS/Drawer/Draawer'
-import Avataar from './COMPONENTS/Avatar/Avataar'
+import Avatar from './COMPONENTS/Avatar/Avataar'
 import BottomNav from './COMPONENTS/BottomNav/BottomNav'
+import RoutesExp from './COMPONENTS/RouteExperiments/RoutesExp'
 
 
 function App() {
 
-  const router = createBrowserRouter(
+  const routes = createBrowserRouter(
     [
       {
-        path: '/', element: <>
-          <Home />
+        // App Main Layout
+        path: "/",
+        element: <><Outlet />
           <MusicPlaying />
-          <Avataar /></>
+        </>,
 
-      }, {
-        path: '/search', element: <>
-          <MusicPlaying />
-          <Search />
-          <BottomNav /></>
+        //Components thats comes inside the Main Layout based on its route
+        children: [
+          {
+            // App Main Body inside the App main Layout where home,search and Library Render
+            path: '/',
+            element: <>
+              <Avatar />
+              <Outlet /></>,
+            children: [{
+              path: "/",
+              element: <Home />,
+              index: true,
+            },
+            {
+              path: "/search",
+              element: <Search />
+            },
+            {
+              path: "/library",
+              element: <Library />
+            },
+
+            ]
+
+          },
+          {
+            //Album which comes inside the Main Layout
+            path: 'playing-album', element: <>
+              <PlayingAlbum />
+
+            </>
+          }
+        ]
       },
       {
-        path: '/library', element: <>
-          <Library />
-          <MusicPlaying />
-          <BottomNav />
-        </>
-      },
-      {
-        path: '/music-player', element: <>
-          <MusicPlayer /></>
-      },
-      {
-        path: 'playing-album', element: <>
-          <PlayingAlbum />
-          <MusicPlaying />
-          <BottomNav />
-        </>
+        path:"/musicplayer",
+        element:<MusicPlayer/>
       }
     ]
   )
 
   return (
-    <>
-      <RouterProvider router={router} />
-
-
-
-    </>
+  <RouterProvider router={routes}/>
   )
 }
 
