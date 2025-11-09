@@ -7,6 +7,9 @@
 .headerContainer {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
 
 
 }
@@ -17,8 +20,7 @@
 }
 
 .song {
-    color:
-        #ebc16d;
+    color: #ebc16d;
     font-size: 20px;
 }
 

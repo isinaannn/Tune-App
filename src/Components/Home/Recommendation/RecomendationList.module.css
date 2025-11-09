@@ -5,22 +5,21 @@
 }
 
 .recommendation{
-    width: 200px;
+    width: 170px;
      flex: 0 0 auto;
 }
 .recommendationBox{
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     background-color: rgb(192, 185, 185);
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns:  auto auto;
     border-radius: 15px / 18px;
     overflow: hidden;
 
 }
 .innerBox{
-    height: 100px;
-    width: 100px;
+  
 
     
     
@@ -48,7 +47,7 @@
 }
 .para{
     margin-top: 5px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     text-align: start;
 }

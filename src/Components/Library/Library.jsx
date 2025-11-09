@@ -12,7 +12,7 @@ export default function Library(){
      
 
 
-       <div className='library-header' style={{ width: "100%" ,paddingLeft: "30px",paddingRight: "30px",position:"fixed", top:"-2px",zIndex:"-1"}}>
+       <div className='library-header' style={{ width: "100%" ,paddingLeft: "30px",paddingRight: "30px",}}>
         <HeaderLibrary />
       </div>
 

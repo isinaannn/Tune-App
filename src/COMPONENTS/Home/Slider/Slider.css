@@ -21,7 +21,7 @@
     border: 1px solid goldenrod;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     
 }
 .slide:first-child{

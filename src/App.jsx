@@ -8,12 +8,12 @@ import PlayingAlbum from './COMPONENTS/PlayingAlbum/PlayingAlbum'
 import MusicPlaying from './COMPONENTS/MusicPlaying/MusicPlaying'
 import Search from './COMPONENTS/Search/Search'
 import MusicPlayer from './COMPONENTS/MusicPlayer/MusicPlayer'
-import { createBrowserRouter, RouterProvider, Routes, Route, Outlet } from 'react-router'
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 import Draawer from './COMPONENTS/Drawer/Draawer'
 import Avatar from './COMPONENTS/Avatar/Avataar'
 import BottomNav from './COMPONENTS/BottomNav/BottomNav'
-import RoutesExp from './COMPONENTS/RouteExperiments/RoutesExp'
+// import RoutesExp from './COMPONENTS/RouteExperiments/RoutesExp'
 
 
 function App() {

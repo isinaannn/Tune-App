@@ -24,7 +24,7 @@ export default function MusicPlayer() {
       <div className="buttons-container" style={{ width: "100%", paddingLeft: "30px", paddingRight: "30px" }}>
         <ButtonGroup />
       </div>
-      <div className="progress-container" style={{ width: "100%" }}>
+      <div className="progress-container" style={{ width: "100%",alignItems: "center",display: "flex",justifyContent: "center" }}>
         <ProgressBar />
       </div>
       <div className="lyrics-container">

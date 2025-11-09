@@ -1,11 +1,35 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.songCard{
-    background-color: white;
+.songCard {
+    background-color: rgb(20, 28, 67);
     border-radius: 0;
     height: 150px;
+    word-break: break-word;
+    align-self: flex-start;
+    display: flex;
+    align-items: end;
+    position: relative;
+    
+
+}
+
+.name {
+    color: whiteblack;
+    text-align: start;
+    position: absolute;
+    opacity: 1;
+
+
+
+}
+
+.iconWrapper{
+    position: absolute;
+    padding-left: 40px;
+    opacity: 0.2;
+    
 }

@@ -13,12 +13,12 @@ export default function Slider(){
                 if(entry.intersectionRatio==1.0){
                 const page = document.querySelector(`.page${entry.target.classList[1]}`);
                 console.log(`page${entry.target.classList[1]}`)
-                document.querySelector(".active")?.classList.remove("active");
+                document.querySelector(".active")?.classList.remove("active")
                 page.classList.add("active");
 
                 }
         });
-      },{
+      },{ 
         root:Root.current,
         threshold:1.0,
       });
@@ -32,18 +32,18 @@ export default function Slider(){
   return (
     <>
      <div className="slider"  ref={Root}>
-      <div className="slide hot" >slide 1</div>
-      <div className="slide sex">slide 2</div>
-      <div className="slide big">slide 3</div>
-      <div className="slide tit">slide 3</div>
-      <div className="slide thickcock">slide 3</div>
+      <div className="slide one" >slide 1</div>
+      <div className="slide two">slide 2</div>
+      <div className="slide three">slide 3</div>
+      <div className="slide four">slide 3</div>
+      <div className="slide five">slide 3</div>
      </div>
      <div className="pagination">
-      <span className="pagehot active"></span>
-      <span className="pagesex"></span>
-      <span className="pagebig"></span>
-      <span className="pagetit"></span>
-      <span className="pagethickcock"></span>
+      <span className="pageone active"></span>
+      <span className="pagetwo"></span>
+      <span className="pagethree"></span>
+      <span className="pagefour"></span>
+      <span className="pagefive"></span>
      </div>
     </>)
 }

@@ -8,8 +8,8 @@ export default function LibraryCard({ name, caption, src, type, category }) {
 
         <>
             <div className={styles.libraryCard}>
-                <div className={type == "artist" ? styles.artistImage : styles.imageContainer}>
-                    <img className={styles.libraryImage} src={src} alt="" />
+                <div className={type == "artist" ? styles.artistImage : styles.libraryImage}>
+                    <img className={styles.image} src={src} alt="" />
                 </div>
                 <div className={styles.libraryDetails}>
                     <h4 className={styles.libraryHead}>{name}</h4>

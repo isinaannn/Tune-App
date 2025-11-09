@@ -5,39 +5,44 @@
 }
 
 .libraryCard {
-    height: 80px;
+    height: 100px;
     width: 100%;
-    flex: 0 0 auto;
     display: flex;
-    
+    flex-direction: row;
+
 
 
 }
 
-.libraryCard:last-child{
+.libraryCard:last-child {
     margin-bottom: 50px;
 }
 
-.imageContainer {
+.libraryImage {
     width: 100px;
     height: 100%;
-    width: 100%;
-    background-color: black;
 
-}
 
-.libraryImage {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .artistImage {
+
+    width: 100px;
     height: 100%;
-    width: 100%;
-    object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
+    flex-shrink: 0;
+
+
+
+
+}
+
+.image {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+
 
 
 }
@@ -45,11 +50,14 @@
 .libraryDetails {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
     align-items: start;
     padding-top: 5px;
     padding-left: 20px;
     width: 500px;
-    
+
+
 
 }
 
@@ -62,8 +70,16 @@
     align-items: center;
     color: #B6B6B6;
     text-align: start;
+    overflow: hidden;
 
-   
+
+
+}
+
+.category {
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 }
 
 .libraryPara {
@@ -71,10 +87,11 @@
     color: #B6B6B6;
     text-align: left;
 
-   
+
 }
 
 .libraryHead {
     margin-top: 10px;
     font-size: 20px;
+    font-weight: 400;
 }

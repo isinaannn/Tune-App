@@ -8,35 +8,44 @@
     backdrop-filter: blur(6px);
     transition: transform 0.3s;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     z-index: 100;
 }
 
 
 
-.bottomNav button{
+.bottomNav button {
     width: 60px;
     height: 100%;
     background: none;
     outline: none;
     border: none;
 
-   
+
 }
 
-.add-component{
+.add-component {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    height:calc(var(--btm-nav) - 0px);
-    background:  rgb(112, 42, 4);
+    height: calc(var(--btm-nav) - 0px);
+   
+    background: linear-gradient(75deg, rgb(63, 47, 39) 0%, rgba(0, 0, 0) 100%);
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     z-index: -1;
+
+
+
 }
 
-.add-component .add-cmpnnt-ovrly{
+.add-scroll {
+    overflow-y: scroll;
+    height: calc(100% - 60px);
+}
+
+.add-component .add-cmpnnt-ovrly {
     position: absolute;
     bottom: calc(var(--btm-nav) - 0px);
     left: 0;
@@ -47,8 +56,6 @@
 
 }
 
-.bottomNav svg:active{
-        
-        color: rgb(255, 190, 79);
-    }
-
+.bi:hover {
+    fill: #ebc16d;
+}

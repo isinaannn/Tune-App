@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    .progressBar {
+      width: 300px; /* ← THIS NOW WORKS */
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+    }
+
+    .waveProgress {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      background: transparent;
+    }
+
+    .waveProgress svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: transparent;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="progressBar">
+    <div class="waveProgress">
+      <svg viewBox="0 0 400 12" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#fbbf24" />
+            <stop offset="50%" stop-color="#f59e0b" />
+            <stop offset="100%" stop-color="#ea580c" />
+          </linearGradient>
+        </defs>
+        
+        <path
+          d="M 0,6 Q 10,2 20,6 T 40,6 T 60,6 T 80,6 T 100,6 T 120,6 T 140,6 T 160,6 T 180,6 T 200,6 L 400,6"
+          stroke="url(#waveGradient)"
+          stroke-width="3"
+          fill="none"
+          stroke-linecap="round"
+        />
+      </svg>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -14,14 +14,14 @@ export default function Home() {
 
 
     return (
-        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", alignItems: "center",zIndex:"-1" }}>
+        <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "30px", }}>
 
             <div className='header' style={{ position: "sticky", top: "20px" }}>
                 <Header />
 
             </div>
                
-            <div className='slider-container' style={{marginTop: "40px"}}>
+            <div className='slider-container' style={{marginTop: "40px",width: "100%"}}>
                  <Slider />
             </div>
 
