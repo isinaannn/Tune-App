@@ -1,6 +1,6 @@
 
 import SearchHeader from './SearchHeader/SearchHeader'
-import SearchBar from './SearchBar/SEarchBar'
+import SearchBar from './SearchBar/SearchBar'
 import SearchTabs from './SearchTabs/SearchTabs'
 import SongCard from './SongCards/SongCard'
 

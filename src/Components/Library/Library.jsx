@@ -3,11 +3,19 @@ import Button from './Tabs/Button'
 import LikedSongs from './LikedSongs/LikedSongs'
 import LibraryCard from './LibraryPlaylist/LibraryCard'
 
+import image1 from './image1.jpeg'
+import image2 from './image2.jpeg'
+import image3 from './image3.jpeg'
+import artist1 from './artist1.jpeg'
+import artist2 from './artist2.jpeg'
+import artist3 from './artist3.jpeg'
+import dataIcon from './swap.png'
+
 export default function Library(){
 
 
     return (
-         <div style={{ width: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+         <div style={{height: "100%", width: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
 
      
 
@@ -21,7 +29,7 @@ export default function Library(){
         <Button name={"Playlist"} />
         <Button name={"Community"} />
         <div className='net-icon'>
-          <img src="src/Components/Library/Tabs/swap.png" alt="" style={{ height: "20px", width: "20px", marginLeft: "40px" }} />
+          <img src={dataIcon} alt="" style={{ height: "20px", width: "20px", marginLeft: "40px" }} />
         </div>
       </div>
 
@@ -29,14 +37,14 @@ export default function Library(){
         <LikedSongs />
       </div>
 
-        <div className='playlist-slider-container' style={{width: "100%", marginTop: "20px",paddingLeft: "30px",paddingRight :"30px" , overflow: "hidden", height: "300px", overflowY: "scroll", overflowX: "hidden", scrollbarWidth: "none", scrollBehavior: "smooth", display: "flex", flexDirection: "column", gap: "30px"  }}>
-            <LibraryCard name={"Feel good"} caption={"10 songs. 20 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/94ae9f12-ffda-42c4-a49f-e252d7e2bff3.jpeg"} />
-            <LibraryCard name={"Trip song"} caption={"20 songs. 2 person"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/download.jpeg"} />
-            <LibraryCard name={"Dj song"} caption={"10 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/download (1).jpeg"} />
-            <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer"} src={"src/Components/Library/LibraryPlaylist/3739458a-d3c4-43b3-b46b-a7421eb12e66.jpeg"} />
-            <LibraryCard name={"Feel good"} caption={"10 songs"} category={"Playlist"} src={"src/Components/Library/LibraryPlaylist/94ae9f12-ffda-42c4-a49f-e252d7e2bff3.jpeg"} />
-            <LibraryCard type={"artist"} name={"Billie eilish"} caption={"20 songs"} category={"Singer"} src={"src/Components/Library/LibraryPlaylist/b23b6f26-fd93-4413-ad79-e0458e83e33a.jpeg"} />
-            <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer/music director"} src={"src/Components/Library/LibraryPlaylist/3739458a-d3c4-43b3-b46b-a7421eb12e66.jpeg"} />
+        <div className='playlist-slider-container' style={{width: "100%", marginTop: "20px",paddingLeft: "30px",paddingRight :"30px" , overflow: "hidden", height: '100%', overflowY: "scroll", overflowX: "hidden", scrollbarWidth: "none", scrollBehavior: "smooth", display: "flex", flexDirection: "column", gap: "30px"  }}>
+            <LibraryCard name={"Feel good"} caption={<>10 songs <br/> 20 songs</>} category={"Playlist"} src={image3} />
+            <LibraryCard name={"Trip song"} caption={<>20 songs<br/> 2 person</>} category={"Playlist"} src={image1} />
+            <LibraryCard name={"Dj song"} caption={"10 songs"} category={"Playlist"} src={image2} />
+            <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer"} src={artist1} />
+            <LibraryCard name={"Feel good"} caption={"10 songs"} category={"Playlist"} src={image3} />
+            <LibraryCard type={"artist"} name={"Billie eilish"} caption={"20 songs"} category={"Singer"} src={artist2} />
+            <LibraryCard type={"artist"} name={"The Weeknd"} caption={"30 songs"} category={"Singer/music director"} src={artist1} />
        
       </div>
  

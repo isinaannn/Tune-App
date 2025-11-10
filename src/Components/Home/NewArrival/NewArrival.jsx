@@ -1,4 +1,5 @@
 import styles from './NewArrival.module.css'
+import saiyaaraImg from './saiyyaarathumbnail.jpeg'
 
 export default function NewArrival() {
 
@@ -7,7 +8,7 @@ export default function NewArrival() {
         <>
             <div className={styles.newArrivalContainer}>
                 <div className={styles.newArrivalCard}>
-                <img className={styles.img} src="src/Components/Home/NewArrival/saiyyaara-thumbnail.jpeg" alt="no image" />
+                <img className={styles.img} src={saiyaaraImg} alt="no image" />
                 </div>
                 <div className={styles.newArrivalDetails}>
                     <p className={styles.songTitle}>Saiyaara Title Song | Ahaan Panday, Aneet Padda | Tanishk Bagchi</p>

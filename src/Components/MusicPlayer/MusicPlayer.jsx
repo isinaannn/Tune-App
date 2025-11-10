@@ -41,13 +41,13 @@ export default function MusicPlayer() {
         </div>
 
         <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "20px", paddingRight: "25px" }}>
-          <a href="" style={{ color: "#B6B6B6", fontWeight: "300", fontWeight: "500" }}>View all</a>
+          <a href="" style={{ color: "#B6B6B6", fontWeight: "300" }}>View all</a>
         </div>
       </div>
 
-      <div className='Recommendation' style={{ width: "100%" }}>
-        <h3 style={{ textAlign: "start", fontSize: "25px", marginBottom: "20px", marginLeft: "30px", fontWeight: "500" }}>Recommended to you</h3>
-        <div className='recommendation-card-slider-container' style={{ overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none", display: "flex", gap: "30px", paddingLeft: "30px", width: "100%", paddingRight: "30px" }}>
+      <div className='Recommendation' style={{ width: "100%" ,marginBottom: "20px"}}>
+        <h3 style={{ textAlign: "start", fontSize: "25px", marginLeft: "30px", fontWeight: "500" }}>Recommended to you</h3>
+        <div className='recommendation-card-slider-container' style={{ overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none", display: "flex", gap: "30px", paddingLeft: "30px", width: "100%", paddingRight: "30px",marginTop: "20px" }}>
 
           <RecommendationList />
           <RecommendationList />

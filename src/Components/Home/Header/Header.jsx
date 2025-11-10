@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import shuffleIcon from './shuffle_14506030.png'
 export default function Header(){
 
 
@@ -11,7 +12,7 @@ export default function Header(){
             <p className={styles.podcast}>Podcast</p>
           </div>
             <div className={styles.iconContainer}>
-                <img className={styles.shuffleIcon} src="src/Components/Home/Header/shuffle_14506030.png" alt="" />
+                <img className={styles.shuffleIcon} src={shuffleIcon} alt="" />
             </div>
         </div>
     )

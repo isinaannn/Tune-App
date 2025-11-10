@@ -35,7 +35,7 @@ export default function Home() {
                 </div>
 
                 <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "20px", paddingRight: "25px" }}>
-                    <a href="" style={{ color: "#B6B6B6", fontWeight: "300", fontWeight: "500" }}>View all</a>
+                    <a href="" style={{ color: "#B6B6B6", fontWeight: "300" }}>View all</a>
                 </div>
             </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
 
 
 
-            <div className='arrival-songs-container' style={{ width: "100%" ,marginBottom: "100px"}}>
+            <div className='arrival-songs-container' style={{ width: "100%" ,marginBottom: "90px"}}>
                 <h3 style={{ textAlign: "start",marginLeft: "30px",fontSize: "25px",fontWeight: "500" }}>New arrival songs</h3>
 
                 <div className='new-arrival-slider-container' style={{ marginTop: "20px",marginBottom:"50px", overflow: "hidden", width: "100%", overflowX: "scroll", overflowY: "hidden", scrollBehavior: "smooth", scrollbarWidth: "none",display: "flex", gap: "30px" ,paddingLeft: "30px",paddingRight: "30px" }}>

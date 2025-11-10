@@ -1,6 +1,7 @@
 
 import { useNavigate } from 'react-router';
 import styles from './PlayerHeader.module.css';
+import lokahImg from './wp15786026-lokah-wallpapers.jpg'
 
 const PlayerHeader = () => {
     const navigate=useNavigate()
@@ -33,7 +34,7 @@ const PlayerHeader = () => {
         </div>
         <div onClick={handleClick} className={styles.songCard}>
             <div className={styles.imgContainer}>
-                <img src="src/Components/PlayingAlbum/Banner/wp15786026-lokah-wallpapers.jpg" alt="" />
+                <img src={lokahImg} alt="" />
             </div>
             <div className={styles.songDetails}>
                 <h4 className={styles.heading}>Lokah movie song</h4>

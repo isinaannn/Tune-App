@@ -1,6 +1,6 @@
 
 import styles from './MusicBanner.module.css';
-
+import lokahImg from './lokah.jpeg'
 const MusicBanner = () => (
     <div>
         <div className={styles.musicBanner}>
@@ -10,7 +10,7 @@ const MusicBanner = () => (
             </div>
 
             <div className={styles.banner}>
-                <img className={styles.bannerImg} src="src/Components/MusicPlayer/MusicBanner/lokah.jpeg" alt="" />
+                <img className={styles.bannerImg} src={lokahImg} alt="" />
 
             </div>
         </div>

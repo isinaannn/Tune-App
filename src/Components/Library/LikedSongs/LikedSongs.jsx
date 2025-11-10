@@ -1,4 +1,4 @@
-import styles from './likedSongs.module.css'
+import styles from './LikedSongs.module.css'
 
 export default function LikedSongs() {
 
