@@ -2,18 +2,25 @@ import { Link, useNavigate } from 'react-router'
 import styles from './MusicPlaying.module.css'
 
 export default function MusicPlaying() {
-            const navigate=useNavigate()
-
-            const handleClick=()=>{
-                navigate('/music-player')
-            }
+    const navigate = useNavigate()
+    // To close add component if its displayed
+    function closeadd() {
+        const root = document.documentElement;
+        const overlay = document.querySelector('.add-cmpnnt-ovrly');
+        overlay.style.display = "none";
+        root.style.setProperty("--btm-nav", "0px");
+    }
+    const handleClick = () => {
+        navigate('/music-player');
+        closeadd();
+    }
 
 
     return (
-       
-             <div onClick={handleClick}  style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
-            
-            <div className={styles.musicPlayingContainer + " musicPlay" }>
+
+        <div onClick={handleClick} style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", gap: "15px", alignItems: "center" }}>
+
+            <div className={styles.musicPlayingContainer + " musicPlay"}>
                 <div className={styles.musicPlayingBar}>
                     <div className={styles.musicPlayingIcons}>
                         <svg className={`${styles.leftIcon} bi bi-chevron-left`} xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" viewBox="0 0 16 16">
@@ -31,11 +38,11 @@ export default function MusicPlaying() {
 
                     </div>
                     <div className={styles.marquee}>
-                        <marquee className={styles.songMarquee} behavior="" direction=""  width="140px">Lokah movie song- Thani lokah murakkari | Jakes bejoy</marquee>
+                        <marquee className={styles.songMarquee} behavior="" direction="" width="140px">Lokah movie song- Thani lokah murakkari | Jakes bejoy</marquee>
 
                     </div>
                     <div className={styles.addBtn}>
-                        <svg className={` bi bi-plus-circle`} xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"  viewBox="0 0 16 16">
+                        <svg className={` bi bi-plus-circle`} xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
                             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
                         </svg>
@@ -43,7 +50,7 @@ export default function MusicPlaying() {
                 </div>
             </div>
         </div>
-    
-       
+
+
     )
 }
