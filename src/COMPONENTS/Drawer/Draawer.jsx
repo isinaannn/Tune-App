@@ -2,10 +2,11 @@ import { useState } from 'react'
 import './Drawer.css'
 
 export default function Draawer(props) {
+    const close = props.closeDrawer();
    
     return (
         <div className="drawer">
-            <div className="overlay" onClick={props.closeDrawer}></div>
+            <div className="overlay" onClick={close}></div>
             <div className='drawer-nav'>
                 <div className="userDetails">
                     <div className="avtrcontainer"></div>
