@@ -27,7 +27,7 @@ export default function Home() {
                 </div>
 
                 <div className='link' style={{ display: "flex", justifyContent: "end", paddingTop: "20px", paddingRight: "25px" }}>
-                    <a href="" style={{ color: "#B6B6B6", fontWeight: "300", fontWeight: "500" }}>View all</a>
+                    <a href="" style={{ color: "#B6B6B6", fontWeight: "500" }}>View all</a>
                 </div>
             </div>
 
