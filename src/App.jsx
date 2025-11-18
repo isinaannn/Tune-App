@@ -2,7 +2,6 @@ import { createBrowserRouter,Outlet,RouterProvider } from 'react-router'
 import './App.css'
 import MusicPlayer from './COMPONENTS/MusicPlayer/MusicPlayer'
 import AppMainLayout from './COMPONENTS/AppMainLayout/AppMainLayout'
-import RoutesExp from './COMPONENTS/RouteExperiments/RoutesExp'
 
 
 function App() {
@@ -30,7 +29,6 @@ function App() {
 
   return (
     <RouterProvider router={routes} />
-    // <RoutesExp />
   )
 }
 
